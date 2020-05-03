@@ -4,6 +4,8 @@
   "private": true,
   "proxy": "http://localhost:8000/",
   "dependencies": {
+    "antd": "^4.2.0",
+    "axios": "^0.19.2",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "react-scripts": "2.0.5"
