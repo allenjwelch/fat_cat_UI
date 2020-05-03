@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const routes = require('./routes');
 const ws = require("nodejs-websocket");
 const socketPORT = 6000;
 require('dotenv').config();

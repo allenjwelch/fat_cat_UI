@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import {  } from'antd';
+import axios from 'axios';
 import ws from 'nodejs-websocket';
+import './App.css';
+
 require('dotenv').config();
 
 const socketPORT = 6000;
-import './App.css';
 
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
   // })
 
   const sendFeed = () => {
+    console.log('sending feed...')
     axios.post('/t2/feed', {
       key: 1,
       message: 'Feed'
@@ -55,12 +57,11 @@ const App = () => {
           Learn React
         </a>
       </header>
-      <p className="App-intro">{this.state.response}</p>
-      <Button
+      <button
         onClick={() => sendFeed()}
       >
       FEED
-      </Button>
+      </button>
     </div>
   );
 }
