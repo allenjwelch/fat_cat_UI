@@ -18,7 +18,7 @@ const logoIndex = Math.floor(Math.random() * Math.floor(logoArray.length));
 const App = () => {
 
 	const [status, setStatus] = useState('Ready');
-	const [foodLevel, setFoodLevel] = useState('Good');
+	const [foodLevel, setFoodLevel] = useState('Low');
 	const [portionSize, setPortionSize] = useState('normal');
 	const [loading, setLoading] = useState(false);
 	const [enableFeed, setEnableFeed] = useState(false);
@@ -35,11 +35,6 @@ const App = () => {
 
 		console.log(tesselIP);
 	}, []);
-
-	// useEffect(() => {
-	// 	socket.emit('portion', portionSize)
-	// 	console.log('sending portion size: ', portionSize)
-	// }, [portionSize]);
 
 	const sendFeed = () => {
 		console.log('sending feed...')
@@ -89,8 +84,10 @@ const App = () => {
 
 					<div className="additional-info">
 						<div className="status">
-							<p><span>Status:</span> {status}</p>
-							<p><span>Food Level:</span> {foodLevel}</p>
+							<p>Status: <span>{status}</span></p>
+							<p>Food Level: <span className={foodLevel === 'Low' && 'low'}>
+								{foodLevel}
+							</span></p>
 						</div>
 
 						<DropDown

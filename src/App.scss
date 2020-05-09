@@ -46,9 +46,13 @@ body {
             .status {
                 p {
                     margin-top: 0;
+                    font-weight: 600;
                 }
                 span {
-                    font-weight: 600;
+                    font-weight: 400;
+                    &.low {
+                        color: #ca0404;
+                    }
                 }
             }
         }
