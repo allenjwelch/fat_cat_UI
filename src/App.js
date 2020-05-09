@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import socketIOClient from "socket.io-client";
 import { Button, DropDown, Input, Loader } from './components';
-import ReactCSSTransitionGroup from 'react-transition-group';
 import './App.scss';
 
 const tesselIP = `${process.env.REACT_APP_TESSEL_IP}:${process.env.REACT_APP_SOCKET_PORT}`;
