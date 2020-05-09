@@ -5,9 +5,11 @@
   "proxy": "http://localhost:8000/",
   "dependencies": {
     "dotenv": "^8.2.0",
+    "node-sass": "^4.14.1",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-scripts": "2.0.5",
+    "react-transition-group": "^4.4.1",
     "socket.io-client": "^2.3.0"
   },
   "scripts": {

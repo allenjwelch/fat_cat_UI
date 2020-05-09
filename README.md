@@ -1,4 +1,5 @@
 # Fat Cat (UI)
+[Imgur](https://i.imgur.com/cmGfOjg.jpg?1)
 
 ## Prerequisites / Dependencies
 To duplicate you will need the following things properly installed on your computer.
